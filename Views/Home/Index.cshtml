@@ -1,0 +1,393 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Michelle Sequeira | UI / UX Designer";
+    ViewBag.Description = "I believe that there is always another side to the story.";
+    ViewBag.Keywords = "Michelle, Sequeira, Thane, Mumbai, UI, UX, Designer, portfolio, ";
+    ViewBag.ogTitle = "Michelle Sequeira | UI / UX Designer";
+    ViewBag.Img = "Content/Images/wapp.jpg";
+}
+
+<style>
+
+    .owl-nav {
+        text-align: center;
+    }
+
+    .owl-prev i, owl-next i{
+        font-size: 3rem;
+    }
+    
+    .owl-next i{
+        font-size: 3rem;
+    }
+
+    .banner{
+        color: var(--text);
+        text-align:center;
+        padding: 12rem 0;
+    }
+
+    .banner p {
+        font-family: inter;
+    }
+
+        .banner h1 {
+            color: #fff;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            animation: typing 5s steps(50, end), blink-caret .5s step-end infinite;
+            font-size: 5rem;
+            padding-bottom: 1rem;
+            font-family: shadow;
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+    .ellipse {
+        padding: 21px 41px 11px;
+        background-color: transparent;
+        width: 400px;
+        height: 100px;
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+        -webkit-box-shadow: 5px -1px 0px 1px var(--text);
+        -moz-box-shadow: 5px -1px 0px 1px var(--text);
+        box-shadow: 5px -1px 0px 1px var(--text);
+    }
+
+    .inverted-ellipse {
+        font-size: 1.8rem;
+        font-family: regular;
+        padding: 10px 50px 25px;
+        background-color: transparent;
+        width: 400px;
+        height: 100px;
+        border-radius: 50% / 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 1px solid var(--text);
+    }
+    .inverted-ellipse:hover {
+        transition: .5s ease;
+        border: 0;
+        -webkit-box-shadow: 5px 1px 0px 1px var(--text);
+        -moz-box-shadow: 5px 1px 0px 1px var(--text);
+        box-shadow: 5px 1px 0px 1px var(--text);
+    }
+
+    .work-container {
+        padding-top: 5rem;
+    }
+
+    .work-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-text {
+        position: absolute;
+        text-align: center;
+    }
+    
+    .work-text h1{
+        color:var(--bg);
+        
+    }
+    
+    .work-text h4{
+        
+        padding-top: 1rem;
+    }
+
+    .work-ellipse {
+        font-size: 2.3rem;
+        font-family: regular;
+        padding: 50px 70px 10px;
+        background-color: var(--text);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+    }
+
+    .work-overlay {
+        position: relative;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .work-box:hover  .work-overlay {
+        opacity: 1;
+    }
+
+    .work-head a{
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .abt-conent {
+        text-align: justify;
+    }
+
+    .abt-img {
+        display: flex;
+        align-self: center;
+    }
+    /* The typing effect */
+    @@keyframes typing {
+        from { width: 0 }
+       to { width: 100% }
+     }
+
+     /* The typewriter cursor effect */
+     @@keyframes blink-caret {
+       from, to { border-color: transparent }
+       50% { border-color: orange }
+     }
+
+     @@media (min-width: 500px){
+        .abt-conent{
+            padding-right:2rem;
+        }
+
+        .abt-img {
+            padding-left: 2rem;
+        }
+     }
+
+    @@media (min-width: 700px) {
+        .abt{
+            max-width:750px;
+        }
+
+        .mprod-cont:after{
+            content: "UCTION";
+        }
+    }
+    
+    @@media (max-width: 700px) {
+        .banner {
+            padding: 6rem 0;
+        }
+
+        .banner h1 {
+            font-size: 2rem;
+        }
+
+            .banner p {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+
+        .ellipse {
+            font-size: 1rem;
+            padding: 15px 23px 8px;
+            -webkit-box-shadow: 2px -1px 0px 1px var(--text);
+            -moz-box-shadow: 2px -1px 0px 1px var(--text);
+            box-shadow: 2px -1px 0px 1px var(--text);
+        }
+
+        .work-ellipse {
+            padding: 0;
+            border-radius: 0;
+            background-color: var(--bg);
+            border: none;
+            color: var(--text) !important;
+            font-size: 1.5rem;
+        }
+
+        .work-text h4 {
+            padding-top: 0;
+            font-size: 1rem;
+        }
+
+        .abt-box {
+            flex-direction: column-reverse;
+        }
+
+        .abt-conent p {
+            font-size: 0.8rem;
+        }
+
+        .abt-conent{
+            padding-top: 2rem;
+        }
+
+        .inverted-ellipse {
+            font-size: 1.3rem;
+            font-family: regular;
+            padding: 10px 42px 17px;
+        }
+
+        .last-head p {
+            padding-top: 2rem !important;
+        }
+
+        .workk-cont p:before{
+            content: "aaa";
+        }
+
+        .work-overlay{
+            opacity:1;
+        }
+
+        .work-box{
+            display:block;
+        }
+
+        .work-text {
+            position: static;
+        }
+      
+    }
+</style>
+
+<div class="banner">
+    <h1>Hi, I'm Michelle Sequeira</h1>
+    <p>
+        An aspiring <span class="ellipse">UI Designer</span> Nice to meet you!
+    </p>
+
+    
+</div>
+
+<div class="abt container">
+    <div class="row abt-box">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 abt-conent">
+            <p>
+                I believe in the idea that there is always another side to the story.
+                Music fuels my energy and sometimes I spend that energy dancing. 
+                I love writing, watching anime and playing sports cheers me up. 
+                Mystery and crime solving stories can grab my attention.
+            </p>
+            <p>
+                During Covid, I stomped upon the term website designing.
+                I worked as a freelancer under the guidance of my brother (developer) 
+                who helped me understand the significance of UX/UI in the world of websites. 
+                Now here I am wanting to enter the corporate world of UX/UI to 
+                grab a better sense and learn more about this field.
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 abt-img">
+            <img src="~/Content/Images/About-img.png" />
+        </div>
+    </div>
+</div>
+
+<div class="work-head workk-cont text-center">
+    <p style="color:var(--bg); padding-top: 6rem">An aspi<span style="color:var(--text)" class="inverted-ellipse"><a href="/Home/Index/#work"> Work </a></span> Nice to meet</p>
+</div>
+
+<div class="work-container container">
+    <div class="work" id="work">
+        <div class="work-carousel owl-carousel owl-theme">
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse les-elipse">LESLIE D'SOUZA</h1>
+                        <h4>Portfolio Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://www.lesliedsouza.in/" target="_blank"><img src="~/Content/Images/les.png" alt="Leslie" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse mita-elipse">MITA DAS GUPTA</h1>
+                        <h4>Portfolio Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://www.mitadgupta.com/" target="_blank"><img src="~/Content/Images/mita.png" alt="Mita" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse floral-elipse">FLORAL FIESTA</h1>
+                        <h4>E-Commerce Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://www.floralfiesta.in/" target="_blank"><img src="~/Content/Images/floral.png" alt="Floral" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse bbc-elipse">BRUNCH BAR CAFE</h1>
+                        <h4>Mobile Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://brunchbarcafe.qrfoodie.com/" target="_blank"><img src="~/Content/Images/bbc.png" alt="bbc" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse mrod-elipse"><span class="mprod-cont">MPROD</span><span> HOUSE</span></h1>
+                        <h4>Corporate Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://www.mproductionhouseuae.com/" target="_blank"><img src="~/Content/Images/mprod.png" alt="mprod" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="work-box">
+                    <div class="work-text">
+                        <h1 class="work-ellipse eiar-elipse">EIAR INFOTECH</h1>
+                        <h4>Corporate Website</h4>
+                    </div>
+
+                    <div class="work-overlay">
+                        <div class="work-image"><a href="https://www.eiarits.com/" target="_blank"><img src="~/Content/Images/eiar.png" alt="eiar" class="work-image" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="work-head last-head text-center">
+    <p style="color:var(--bg); padding-top: 10rem"><span style="color:var(--text)" class="inverted-ellipse"><a href="/Work/Templates">Templates </a></span></p>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-prev").html('<i class="bi bi-arrow-left-short"></i>');
+        $(".owl-next").html('<i class="bi bi-arrow-right-short"></i>');
+    });
+
+    $('.work-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>

@@ -1,0 +1,76 @@
+﻿@{ 
+    var webname = "https://mishfolio.com/";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <meta property="og:title" content="@ViewBag.ogTitle" />
+    <meta property="og:url" content="@webname" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:image" content="@(webname + ViewBag.Img)" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="~/Content/all.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 navbar-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li><a href="/Work/Projects">Work</a></li>
+                            <li><a href="/Work/Templates">Templates</a></li>
+                            <li><a href="mailto:michelleseq26@gmail.com">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="navbar-icon">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="text-center"><a href="/Home/Index">Home</a></div>
+            <div class="text-center"><a href="/Work/Projects">Work</a></div>
+            <div class="text-center"><a href="/Work/Templates">Templates</a></div>
+            <div class="text-center"><a href="mailto:michelleseq26@gmail.com">Contact</a></div>
+        </div>
+        <div class="comp-info d-flex justify-content-center">
+            <h4 class="px-2"> <a href="mailto:michelleseq26@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></h4>
+            <h4 class="px-2"> <a href="https://www.linkedin.com/in/michelle-sequeira22198/" target="_blank"><i class="bi bi-linkedin"></i></a></h4>
+        </div>
+    </footer>
+
+    <script>
+        $('.navbar-icon').click(function () {
+            $(this).toggleClass("active");
+            $(".navbar-menu nav").toggleClass("active");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Living Beyond";
+    ViewBag.Description = "An E-commerce website that sells whole spices. Giving high quality whole masala to that \r\n       " +
+                " discerning person in mind who is particular about not just the taste of the food she or \r\n        he prepares but has the health of their family as a top priority.";
+    ViewBag.Keywords = "Michelle, Sequeira, Thane, Mumbai, UI, UX, Designer, portfolio, Projects, Templates, Living Beyond";
+    ViewBag.ogTitle = "Michelle Sequeira | Living Beyond";
+    ViewBag.Img = "Content/Images/lb/lb.png";
+}
+
+<style>
+    .temp-name {
+        text-align: center;
+        padding: 4.5rem 0;
+    }
+
+    .work-ellipse {
+        font-size: 2.3rem;
+        padding: 50px 70px 10px;
+        background-color: var(--bg);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+        width: fit-content;
+        margin: auto;
+    }
+
+    .temp-name h1 {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    .work-info h2 {
+        font-size: 2.9rem;
+        letter-spacing: 2px;
+    }
+
+    .temp-name p {
+        padding-top: 2rem;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .temp-imgs {
+        padding: 3rem 0;
+    }
+
+        .temp-imgs img {
+            padding-bottom: 1rem;
+        }
+
+        @@media(max-width: 600px){
+            .work-ellipse {
+                font-size: 2.3rem;
+                padding: 50px 33px 10px;
+            }
+
+            .temp-name h1 {
+                font-size: 2rem;
+            }
+
+            .temp-name p {
+                font-size: 0.8rem;
+                padding: 1rem 2rem;
+                font-weight: 200;
+            }
+
+            .temp-name {
+                padding: 4.5rem 0 0;
+            }
+        }
+</style>
+
+
+<div class="temp-name">
+    <h1 class="work-ellipse">Living Beyond</h1>
+    <p>
+        An E-commerce website that sells whole spices. Giving high quality whole masala to that 
+        discerning person in mind who is particular about not just the taste of the food she or 
+        he prepares but has the health of their family as a top priority.
+    </p>
+</div>
+
+<div class="temp-imgs container">
+    <div class="row d-lg-flex d-md-none d-xs-flex">
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/lb/lb.png" />
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/lb/event_final.png" />
+            <img src="~/Content/Images/lb/Product list.png" />
+            <img src="~/Content/Images/lb/Recipe.png" />
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/lb/login.png" />
+            <img src="~/Content/Images/lb/Product final.png" />
+            <img src="~/Content/Images/lb/about_us_2.png" />
+        </div>
+    </div>
+
+    <div class="row d-lg-none d-sm-none d-xs-none d-none d-md-flex ">
+        <div class="col-6">
+            <img src="~/Content/Images/lb/lb.png" />
+            <img src="~/Content/Images/lb/login.png" />
+            <img src="~/Content/Images/lb/about_us_2.png" />
+        </div>
+        <div class="col-6">
+            <img src="~/Content/Images/lb/event_final.png" />
+            <img src="~/Content/Images/lb/Product list.png" />
+            <img src="~/Content/Images/lb/Recipe.png" />
+            <img src="~/Content/Images/lb/Product final.png" />
+        </div>
+    </div>
+</div>

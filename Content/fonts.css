@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'shadow';
+    src: url('../fonts/shadowsintolight-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'formal';
+    src: url('../fonts/ortica-light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/inter-variablefont_slnt,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'circle';
+    src: url('../fonts/circularstd-light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/raleway-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url('../fonts/raleway-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/raleway-regular.ttf') format('truetype');
+}

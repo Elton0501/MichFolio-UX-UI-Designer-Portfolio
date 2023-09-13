@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "BSJSJ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = " An E-commerce website that sells premium jewels. They carry an ancestorial business of jewelries since 1933 and take pride in the quality and the designs.";
+    ViewBag.Keywords = "Michelle, Sequeira, Thane, Mumbai, UI, UX, Designer, portfolio, Projects, Templates, BSJSJ";
+    ViewBag.ogTitle = "Michelle Sequeira | BSJSJ";
+    ViewBag.Img = "Content/Images/BSJSJ/home 1.png";
+}
+
+<style>
+    .temp-name {
+        text-align: center;
+        padding: 4.5rem 0;
+    }
+
+    .work-ellipse {
+        font-size: 2.3rem;
+        padding: 50px 70px 10px;
+        background-color: var(--bg);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+        width: fit-content;
+        margin: auto;
+    }
+
+    .temp-name h1 {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    .work-info h2 {
+        font-size: 2.9rem;
+        letter-spacing: 2px;
+    }
+
+    .temp-name p {
+        padding-top: 2rem;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .temp-imgs {
+        padding: 3rem 0;
+    }
+
+        .temp-imgs img {
+            padding-bottom: 1rem;
+        }
+
+    @@media(max-width: 600px) {
+        .work-ellipse {
+            font-size: 2.3rem;
+            padding: 50px 33px 10px;
+        }
+
+        .temp-name h1 {
+            font-size: 2rem;
+        }
+
+        .temp-name p {
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+            font-weight: 200;
+        }
+
+        .temp-name {
+            padding: 4.5rem 0 0;
+        }
+    }
+</style>
+
+<div class="temp-name">
+    <h1 class="work-ellipse">BSJSJ</h1>
+    <p>
+        An E-commerce website that sells premium jewels. 
+        They carry an ancestorial business of jewelries since 
+        1933 and take pride in the quality and the designs.
+    </p>
+</div>
+
+<div class="temp-imgs container">
+    <div class="row d-lg-flex d-md-none d-xs-flex">
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/BSJSJ/home 1.png" />
+            <img src="~/Content/Images/BSJSJ/register.png" />
+            <img src="~/Content/Images/BSJSJ/checkout.png" />
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/BSJSJ/product final.png" />
+            <img src="~/Content/Images/BSJSJ/Product list.png" />
+            <img src="~/Content/Images/BSJSJ/cart.png" />
+
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/BSJSJ/Web 1920 – 2.png" />
+            <img src="~/Content/Images/BSJSJ/login.png" />
+            <img src="~/Content/Images/BSJSJ/your order.png" />
+        </div>
+    </div>
+
+    <div class="row d-lg-none d-sm-none d-xs-none d-none d-md-flex ">
+        <div class="col-6">
+            <img src="~/Content/Images/BSJSJ/home 1.png" />
+            <img src="~/Content/Images/BSJSJ/register.png" />
+            <img src="~/Content/Images/BSJSJ/checkout.png" />
+            <img src="~/Content/Images/BSJSJ/cart.png" />
+        </div>
+        <div class="col-6">
+            <img src="~/Content/Images/BSJSJ/Web 1920 – 2.png" />
+            <img src="~/Content/Images/BSJSJ/login.png" />
+            <img src="~/Content/Images/BSJSJ/your order.png" />
+            <img src="~/Content/Images/BSJSJ/product final.png" />
+            <img src="~/Content/Images/BSJSJ/Product list.png" />
+        </div>
+    </div>
+</div>

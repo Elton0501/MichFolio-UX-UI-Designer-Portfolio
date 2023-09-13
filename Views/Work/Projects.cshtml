@@ -1,0 +1,389 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Projects";
+    ViewBag.Description = "A list of all the Websites and Web-Apps designed by Michelle Sequeira";
+    ViewBag.Keywords = "Michelle, Sequeira, Thane, Mumbai, UI, UX, Designer, portfolio, Projects, Templates";
+    ViewBag.ogTitle = "Michelle Sequeira | Projects";
+    ViewBag.Img = "Content/Images/wapp.jpg";
+}
+
+<style>
+    .projects-container {
+        text-align: center;
+    }
+
+    .projects-head {
+        padding: 3rem 0;
+    }
+
+    .work-ellipse {
+        font-size: 2.3rem;
+        font-family: regular;
+        padding: 50px 70px 10px;
+        background-color: var(--bg);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+        width: fit-content;
+        margin: auto;
+    }
+
+    .hiddenimg {
+        display: none;
+    }
+
+    .hiddentxt {
+        font-weight: bold;
+        color: #F00;
+        z-index: 99;
+        position: relative;
+        width: max-content;
+        margin: auto;
+        opacity: 0.7;
+        transition: .5s ease;
+    }
+
+        .hiddentxt:hover {
+            opacity: 1;
+        }
+
+    .hiddentxt {
+        font-weight: bold;
+        color: #F00;
+        z-index: 99;
+        position: relative;
+        width: max-content;
+        margin: auto;
+        opacity: 0.7;
+    }
+
+        .hiddentxt a {
+            color: #F00;
+            text-decoration: none;
+            z-index: 99;
+        }
+
+    .hiddenclick {
+        font-weight: bold;
+        color: #F00;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .hiddenclick a {
+            color: #F00;
+            text-decoration: none;
+        }
+
+            .hiddenclick a:visited {
+                color: #F00;
+                text-decoration: none;
+            }
+
+    .hiddenclickimg {
+        display: none;
+    }
+
+    .proj-item-box h1 {
+        font-size: 2rem !important;
+        color: white !important;
+        margin: 0rem;
+    }
+
+    .proj-item-box p {
+        color: white !important;
+        font-weight: 100;
+    }
+
+    .proj-item-box {
+        padding-top: 1rem;
+    }
+
+    @@media (min-width: 1025px) {
+        .leztext:hover ~ .lezimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 30%;
+            width: 100%;
+        }
+
+        .mitatext:hover ~ .mitaimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: left;
+            top: 40%;
+            width: 100%;
+        }
+
+        .floraltext:hover ~ .floralimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 50%;
+            width: 100%;
+        }
+
+        .bbctext:hover ~ .bbcimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: left;
+            top: 60%;
+            width: 100%;
+        }
+
+        .mprodtext:hover ~ .mprodimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 70%;
+            width: 100%;
+        }
+
+        .oobgtext:hover ~ .oobgimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: left;
+            top: 80%;
+            width: 100%;
+        }
+
+        .eiartext:hover ~ .eiarimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 90%;
+            width: 100%;
+        }
+
+        .lbtext:hover ~ .lbimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: left;
+            top: 100%;
+            width: 100%;
+        }
+
+        .vigtext:hover ~ .vigimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 100%;
+            width: 100%;
+        }
+
+        .bsjsjtext:hover ~ .bsjsjimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: left;
+            top: 100%;
+            width: 100%;
+        }
+
+        .pcbtext:hover ~ .pcbimg {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            top: 100%;
+            width: 100%;
+        }
+    }
+
+    @@media(max-width: 600px) {
+        .proj-item-box h1 {
+            font-size: 1.3rem !important;
+        }
+
+        .work-ellipse {
+            font-size: 1.8rem;
+            padding: 35px 45px 10px;
+        }
+
+        .hiddentxt {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="projects-container">
+    <div class="projects-head">
+        <h1 class="work-ellipse">PROJECTS</h1>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt leztext">
+                    <a href="https://www.lesliedsouza.in/" target="_blank">
+                        <h1>LESLIE DSOUZA</h1>
+                        <p>Portfolio Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg lezimg"><img style="width:40%" src="~/Content/Images/les.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt mitatext">
+                    <a href="https://www.mitadgupta.com/" target="_blank">
+                        <h1>MITA DAS GUPTA</h1>
+                        <p>Portfolio Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg mitaimg"><img style="width:40%" src="~/Content/Images/mita.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt floraltext">
+                    <a href="https://www.floralfiesta.in/" target="_blank">
+                        <h1>FLORAL FIESTA</h1>
+                        <p>E-Commerce Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg floralimg"><img style="width:40%" src="~/Content/Images/floral.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt bbctext">
+                    <a href="https://brunchbarcafe.qrfoodie.com/" target="_blank">
+                        <h1>BRUNCH BAR CAFE</h1>
+                        <p>Mobile Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg bbcimg"><img style="width:40%" src="~/Content/Images/bbc.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt mprodtext">
+                    <a href="https://www.mproductionhouseuae.com/" target="_blank">
+                        <h1>MPRODUCTION</h1>
+                        <p>Corporate Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg mprodimg"><img style="width:40%" src="~/Content/Images/mprod.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt oobgtext">
+                    <a href="/Work/OutOfBoxGenz">
+                        <h1>OUT OF BOX GEN</h1>
+                        <p>Corporate Template</p>
+                    </a>
+                </div>
+                <span class="hiddenimg oobgimg"><img style="width:40%" src="~/Content/Images/oobj.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt eiartext">
+                    <a href="https://www.eiarits.com/">
+                        <h1>EIAR INFOTECH</h1>
+                        <p>Corporate Website</p>
+                    </a>
+                </div>
+                <span class="hiddenimg eiarimg"><img style="width:40%" src="~/Content/Images/eiar.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt lbtext">
+                    <a href="/Work/LivingBeyond">
+                        <h1>LIVING BEYOND</h1>
+                        <p>E-Commerce Template</p>
+                    </a>
+                </div>
+                <span class="hiddenimg lbimg"><img style="width:40%" src="~/Content/Images/living beyond.png" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt vigtext">
+                    <a href="/Work/Vigraha">
+                        <h1>VIGRAHA</h1>
+                        <p>E-Commerce Template</p>
+                    </a>
+                </div>
+                <span class="hiddenimg vigimg"><img style="width:40%" src="~/Content/Images/vig.jpg" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt bsjsjtext">
+                    <a href="/Work/BSJSJ">
+                        <h1>BSJSJ</h1>
+                        <p>E-Commerce Template</p>
+                    </a>
+                </div>
+                <span class="hiddenimg bsjsjimg"><img style="width:40%" src="~/Content/Images/bsjsj.jpg" /></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-list">
+        <div class="proj">
+            <div class="proj-item-box">
+                <div class="hiddentxt pcbtext">
+                    <a href="/Work/PureCottonBags">
+                        <h1>PURE COTTON BAGS</h1>
+                        <p>E-Commerce Template</p>
+                    </a>
+                </div>
+                <span class="hiddenimg pcbimg"><img style="width:40%" src="~/Content/Images/pcb.jpg" /></span>
+            </div>
+        </div>
+    </div>
+</div>

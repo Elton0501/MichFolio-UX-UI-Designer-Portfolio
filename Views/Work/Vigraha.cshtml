@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Vigraha";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "An E-commerce website that focuses on selling Natural and Authentic Indian products and to target the market with Premium produce from all across India..";
+    ViewBag.Keywords = "Michelle, Sequeira, Thane, Mumbai, UI, UX, Designer, portfolio, Projects, Templates, Vigraha";
+    ViewBag.ogTitle = "Michelle Sequeira | Vigraha";
+    ViewBag.Img = "Content/Images/vig/home_pg2.jpg";
+}
+
+<style>
+    .temp-name {
+        text-align: center;
+        padding: 4.5rem 0;
+    }
+
+    .work-ellipse {
+        font-size: 2.3rem;
+        padding: 50px 70px 10px;
+        background-color: var(--bg);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid var(--text);
+        width: fit-content;
+        margin: auto;
+    }
+
+    .temp-name h1 {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    .work-info h2 {
+        font-size: 2.9rem;
+        letter-spacing: 2px;
+    }
+
+    .temp-name p {
+        padding-top: 2rem;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .temp-imgs {
+        padding: 3rem 0;
+    }
+
+        .temp-imgs img {
+            padding-bottom: 1rem;
+        }
+
+    @@media(max-width: 600px) {
+        .work-ellipse {
+            font-size: 2.3rem;
+            padding: 50px 33px 10px;
+        }
+
+        .temp-name h1 {
+            font-size: 2rem;
+        }
+
+        .temp-name p {
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+            font-weight: 200;
+        }
+
+        .temp-name {
+            padding: 4.5rem 0 0;
+        }
+    }
+</style>
+
+
+<div class="temp-name">
+    <h1 class="work-ellipse">VIGRAHA</h1>
+    <p>
+        An E-commerce website that focuses on selling Natural and Authentic Indian products
+        and to target the market with Premium produce from all across India..
+    </p>
+</div>
+
+<div class="temp-imgs container">
+    <div class="row d-lg-flex d-md-none d-xs-flex">
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/vig/home_pg2.jpg" />
+            <img src="~/Content/Images/vig/your order.jpg" />
+
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/vig/Login.jpg" />
+            <img src="~/Content/Images/vig/register.jpg" />
+            <img src="~/Content/Images/vig/product_list.jpg" />
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <img src="~/Content/Images/vig/PRODUCT.jpg" />
+            <img src="~/Content/Images/vig/cart.jpg" />
+        </div>
+    </div>
+
+    <div class="row d-lg-none d-sm-none d-xs-none d-none d-md-flex ">
+        <div class="col-6">
+            <img src="~/Content/Images/vig/home_pg2.jpg" />
+            <img src="~/Content/Images/vig/your order.jpg" />
+            <img src="~/Content/Images/vig/register.jpg" />
+            <img src="~/Content/Images/vig/PRODUCT.jpg" />
+        </div>
+        <div class="col-6">
+            <img src="~/Content/Images/vig/Login.jpg" />
+            <img src="~/Content/Images/vig/register.jpg" />
+            <img src="~/Content/Images/vig/product_list.jpg" />
+            <img src="~/Content/Images/vig/cart.jpg" />
+        </div>
+    </div>
+</div>
